@@ -6,6 +6,7 @@ import Login from './components/Login';
 import FriendList from './components/FriendList';
 import AddFriend from './components/AddFriend';
 import Logout from './components/Logout';
+import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
       </header>
       <Switch>
         <Route path='/addfriend' component={AddFriend} />
-        <Route path='/friends' component={FriendList} />
+        <PrivateRoute exact path='/friends' component={FriendList} />
         <Route path='/logout' component={Logout} />
         <Route path='/login' component={Login} />
         <Route path='/' component={Login} />
