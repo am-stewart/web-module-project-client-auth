@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <header>
+        <h2>Friends Database</h2>
         <nav>
           <Link to='/login'>Login</Link>
           <Link to='/friendlist'>Friend List</Link>
