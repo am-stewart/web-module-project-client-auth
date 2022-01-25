@@ -14,14 +14,14 @@ function App() {
         <h2>Friends Database</h2>
         <nav>
           <Link to='/login'>Login</Link>
-          <Link to='/friendlist'>Friend List</Link>
+          <Link to='/friends'>Friend List</Link>
           <Link to='/addfriend'>Add Friend</Link>
           <Link to='/logout'>Logout</Link>
         </nav>
       </header>
       <Switch>
         <Route path='/addfriend' component={AddFriend} />
-        <Route path='/friendlist' component={FriendList} />
+        <Route path='/friends' component={FriendList} />
         <Route path='/logout' component={Logout} />
         <Route path='/login' component={Login} />
         <Route path='/' component={Login} />
