@@ -6,7 +6,8 @@ class AddFriend extends React.Component {
    state = {
     friend: {
       name: '',
-      email: ''
+      age: '',
+      email: '',
     }
   }
 
@@ -21,7 +22,6 @@ class AddFriend extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    console.log('props', this.props)
     axiosWithAuth()
       .post('/friends', this.state.friend)
       .then(resp =>{
@@ -41,6 +41,15 @@ class AddFriend extends React.Component {
             type='text'
             name='name'
             value={this.state.friend.name}
+            onChange={this.handleChanges}
+          />
+        </label>
+
+        <label>Age
+          <input
+            type='text'
+            name='age'
+            value={this.state.friend.age}
             onChange={this.handleChanges}
           />
         </label>
