@@ -14,10 +14,10 @@ function App() {
       <header>
         <h2>Friends Database</h2>
         <nav>
-          <Link to='/login'>Login</Link>
-          <Link to='/friends'>Friend List</Link>
-          <Link to='/addfriend'>Add Friend</Link>
-          <Link to='/logout'>Logout</Link>
+          <Link className='navLink' to='/login'>Login</Link>
+          <Link className='navLink' to='/friends'>Friend List</Link>
+          <Link className='navLink' to='/addfriend'>Add Friend</Link>
+          <Link className='navLink' to='/logout'>Logout</Link>
         </nav>
       </header>
       <Switch>

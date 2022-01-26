@@ -36,7 +36,7 @@ class AddFriend extends React.Component {
   return (
     <div>
       <form onSubmit={this.handleSubmit}>
-        <label>Friend Name
+        <label className='friendForm'>Friend Name
           <input
             type='text'
             name='name'
@@ -45,7 +45,7 @@ class AddFriend extends React.Component {
           />
         </label>
 
-        <label>Age
+        <label className='friendForm'>Age
           <input
             type='text'
             name='age'
@@ -54,7 +54,7 @@ class AddFriend extends React.Component {
           />
         </label>
 
-        <label>Friend Email
+        <label className='friendForm'>Friend Email
           <input 
             type='email'
             name='email'

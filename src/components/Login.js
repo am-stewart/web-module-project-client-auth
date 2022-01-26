@@ -40,7 +40,7 @@ class Login extends React.Component {
     <div>
       <h1>Login</h1>
       <form onSubmit={this.login}>
-        <label>Username
+        <label className='loginForm'>Username
           <input
             type='text'
             name='username'
@@ -49,7 +49,7 @@ class Login extends React.Component {
           />
         </label>
 
-        <label>Password
+        <label className='loginForm'>Password
           <input
             type='password'
             name='password'

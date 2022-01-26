@@ -37,4 +37,30 @@
   }
 }
 
+.navLink {
+  margin: 10px;
+  border: 2px solid grey;
+  text-decoration: none;
+  padding: 5px;
+  color: rgb(15, 133, 101);
+}
 
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 35%;
+}
+
+button {
+  justify-content: center;
+  margin-top: 10px;
+  padding: 5px;
+  border: 2px solid grey;
+  color: rgb(15, 133, 101);
+}
+
+.friendForm {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 35%;
+}
