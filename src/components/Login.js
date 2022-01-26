@@ -21,7 +21,6 @@ class Login extends React.Component {
 
   login = e => {
     e.preventDefault();
-    console.log(this.state.credentials)
     axios.post('http://localhost:9000/api/login', this.state.credentials)
     .then(resp => {
       console.log(resp.data)
@@ -29,6 +28,7 @@ class Login extends React.Component {
       localStorage.setItem('role', resp.data.role);
       localStorage.setItem('username', resp.data.username);
       this.props.history.push('/friends');
+      console.log('login props', this.props)
     })
     .catch(err=>{
       console.log(err);
